@@ -1,8 +1,10 @@
-.App{
+.App {
+  margin: 30px;
+  padding: 0;
   text-align: center;
 }
 
-.card-list{
+.card-list {
   width: 85vw;
   margin: 0 auto;
   display: grid;

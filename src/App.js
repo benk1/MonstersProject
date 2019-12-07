@@ -6,22 +6,22 @@ import CardList from './components/card-list/Card-list.component';
 const apiEndPoint = 'https://jsonplaceholder.typicode.com/users';
 class App extends Component {
   state = {
-    users: []
+    monsters: []
   };
   async componentDidMount() {
-    const { data: users } = await axios.get(apiEndPoint);
+    const { data: monsters } = await axios.get(apiEndPoint);
     //console.log('My data',posts);
     this.setState({
-      users
+      monsters
     });
   }
 
   render() {
-    const { users } = this.state;
+    const { monsters } = this.state;
 
     return (
       <div className='App'>
-        <CardList users={users} />
+        <CardList monsters={monsters} />
       </div>
     );
   }
