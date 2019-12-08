@@ -1,1 +1,1 @@
-[Check out The Monster App Live Here](https://github.com/benk1/MonstersProject.git)
+[Check out The Monster App Live Here](https://benk1.github.io/MonstersProject/)
