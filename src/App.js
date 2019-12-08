@@ -33,15 +33,12 @@ class App extends Component {
 
     return (
       <div className='App'>
-        <input
-          className='search'
-          type='search'
+        <h1>Monsters Rolodex</h1>
+        <SearchBox
+          handleChange={this.handleChange}
           placeholder='Search Monsters'
-          name='searchInput'
-          onChange={this.handleChange}
-          value={searchField}
         />
-        <p className='blue-text'>
+        <p className='white-text text-darken-5 sum'>
           Sum of available Monsters are: {filteredMonsters.length}
         </p>
         <CardList monsters={filteredMonsters} />

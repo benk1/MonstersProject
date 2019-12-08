@@ -1,6 +1,16 @@
 import React from 'react';
-const SearchBox = ({}) => {
-  return <div></div>;
+const SearchBox = ({handleChange,placeholder}) => {
+  return (
+   
+    <input
+      className='search'
+      type='search'
+      placeholder={placeholder}
+      name='searchInput'
+      onChange={handleChange}
+      
+    />
+  )
 };
 
 export default SearchBox;
