@@ -13,7 +13,7 @@ class App extends Component {
   };
   async componentDidMount() {
     const { data: monsters } = await axios.get(apiEndPoint);
-    //console.log('My data',posts);
+
     this.setState({
       monsters
     });
@@ -39,7 +39,7 @@ class App extends Component {
           placeholder='Search Monsters'
         />
         <p className='white-text text-darken-5 sum'>
-          Sum of available Monsters are: {filteredMonsters.length}
+          Currently We Are Having {filteredMonsters.length} Monsters
         </p>
         <CardList monsters={filteredMonsters} />
       </div>
